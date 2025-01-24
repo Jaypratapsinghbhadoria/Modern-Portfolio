@@ -11,11 +11,11 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Victor Williams — Frontend Engineer",
+  title: "Jay Pratap Singh Bhadoria — Frontend Developer",
   description:
-    "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+    "Frontend Developer and Web Designer. Focused on interfaces and experiences, working remotely from Gwalior, India.",
   generator: "Next.js",
-  applicationName: "Victor Williams",
+  applicationName: "Jay Pratap Singh Bhadoria",
   keywords: [
     "freelance",
     "developer",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "creative developer",
     "creative engineer",
     "tech",
-    "nigeria",
+    "india",
     "software",
     "software developer",
     "portfolio",

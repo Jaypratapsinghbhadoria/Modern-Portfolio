@@ -12,7 +12,7 @@ const About = () => {
       <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
         <AnimatedTitle
           text={
-            "I MAKE BRANDS BEAUTIFUL, WEBSITES POWERFUL AND CONTENT CAPTIVATING."
+            "I TRANSFORM IDEAS INTO STUNNING WEBSITES WITH MODERN FRONTEND MAGIC"
           }
           className={
             "mb-10 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
@@ -30,23 +30,23 @@ const About = () => {
             />
             <AnimatedBody
               text={
-                "Whether I’m designing a sleek user interface or coding a complex application, I’m always striving to create something unique and innovative. I love experimenting with new technologies and staying up-to-date with the latest trends in the tech world."
+                "I am a passionate frontend developer dedicated to crafting stunning websites that deliver seamless user experiences. With expertise in React.js, Tailwind CSS, and GSAP, I bring ideas to life through modern, responsive designs and captivating animations."
               }
               className={"hidden"}
             />
             <AnimatedBody
               text={
-                "Beyond my work as a frontend developer, I'm an active leader in tech communities on campus. As a member of the Google Developer Student Clubs and Microsoft Learn Student Ambassadors, I've led workshops and mentored other students."
+                "During my first year of college, I was an active member of the Alumni Community, where I honed my collaborative and leadership skills. Now in my second year, I continue to lead and attend workshops and seminars, sharing knowledge and learning from peers to stay at the forefront of technology."
               }
             />
             <AnimatedBody
               text={
-                "When I'm not coding, you can find me binge-watching anime, hanging out with friends, cheering on Manchester United, or discovering new music in my favorite genres like RnB, UK Drill, and Chill Rap."
+                "In addition to my work in web development, I have contributed to research in the Internet of Things (IoT), authoring research papers that explore innovative applications of this transformative technology."
               }
             />
             <AnimatedBody
               text={
-                "I'm currently working on some exciting projects that I can't wait to share with you. But I’m always open to new opportunities and collaborations."
+                "I'm always excited to collaborate, build impactful projects, and explore new opportunities that challenge me to grow as a developer and problem-solver."
               }
             />
           </div>
@@ -63,7 +63,7 @@ const About = () => {
               />
               <AnimatedBody
                 text={
-                  "JavaScript (ES6+), React, Next.js, TypeScript, Prismic CMS, Redux, Redux Toolkit, React Testing Library, Vitetest, HTML5, Git/GitHub, NextAuth, Formik."
+                  "JavaScript (ES6+), React, Redux, Redux Toolkit, React Testing Library, HTML5, Git/GitHub."
                 }
               />
             </div>
@@ -78,13 +78,13 @@ const About = () => {
               />
               <AnimatedBody
                 text={
-                  "CSS3/SCSS/SASS, Tailwind CSS, Material UI, Framer Motion, GSAP, Bootstrap, Chart.js."
+                  "CSS3, Tailwind CSS, Framer Motion, GSAP, Bootstrap, Chart.js."
                 }
               />
             </div>
             <div className="flex flex-col gap-3">
               <AnimatedTitle
-                text={"Design Tools"}
+                text={"Other programming languages"}
                 className={
                   "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
                 }
@@ -93,7 +93,7 @@ const About = () => {
               />
               <AnimatedBody
                 text={
-                  "Figma, Framer, FigJam, Adobe XD, ProtoPie, Adobe Photoshop, UX Research, UI Design, Prototyping."
+                  "C++, Python, R language, SQL"
                 }
               />
             </div>

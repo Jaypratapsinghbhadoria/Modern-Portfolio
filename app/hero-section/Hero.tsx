@@ -6,7 +6,18 @@ import { imageAnimation, bodyAnimation } from "../animations/animations";
 import AnimatedWords from "../animations/AnimatedWords";
 import profile from "../../public/profile.webp";
 
+// Import Font Awesome icons
+import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
+
+
+
 const Hero = () => {
+
+  const AnimatedWords = ({ title=" ", style= " "}) => {
+    return <h1 className={style}>{title}</h1>;
+  };
+  
+
   return (
     <motion.section
       className="relative z-10 flex h-[85vh] w-full items-stretch justify-center bg-[url('.//../public/hero.jpg')] bg-cover  bg-center py-0 sm:h-[90vh]  md:h-[100vh] 3xl:h-[85vh]"
@@ -19,7 +30,7 @@ const Hero = () => {
       <div className="absolute top-10 flex justify-between sm:w-[90%] lg:max-w-[1440px]">
         <div>
           <Link
-            href="https://cal.com/victorwilliams/30min"
+            href="https://cal.com/jay-pratap-singh-bhadoria-2mqj2p/30min"
             target="_blank"
             aria-label="BOOK A CALL"
           >
@@ -32,81 +43,80 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="flex gap-10 text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
+        <div className="flex gap-6 text-[#e4ded7] sm:gap-8 md:gap-10 lg:gap-12">
+          {/* GitHub Icon */}
           <Link
-            href="https://github.com/victorcodess"
+            href="https://github.com/Jaypratapsinghbhadoria"
             target="_blank"
             aria-label="View GitHub Profile"
           >
-            <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+            <motion.div
+              className="text-[20px] md:text-[24px] hover:text-gray-400"
               variants={bodyAnimation}
             >
-              GH
-            </motion.p>
+              <FaGithub />
+            </motion.div>
           </Link>
+
+          {/* LinkedIn Icon */}
           <Link
-            href="https://www.linkedin.com/in/victor-williams-chukwudi/"
+            href="https://www.linkedin.com/in/jay-pratap-singh-bhadoria-561796295/"
             target="_blank"
             aria-label="View LinkedIn Profile"
           >
-            <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+            <motion.div
+              className="text-[20px] md:text-[24px] hover:text-gray-400"
               variants={bodyAnimation}
             >
-              LN
-            </motion.p>
+              <FaLinkedin />
+            </motion.div>
           </Link>
+
+          {/* LeetCode Icon */}
           <Link
-            href="https://twitter.com/victorwill__"
+            href="https://leetcode.com/u/Jaypratap-123/"
             target="_blank"
-            aria-label="View Twitter Profile"
+            aria-label="View LeetCode Profile"
           >
-            <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+            <motion.div
+              className="text-[20px] md:text-[24px] hover:text-gray-400"
               variants={bodyAnimation}
             >
-              TW
-            </motion.p>
-          </Link>
-          <Link
-            href="https://contra.com/victorwilliams"
-            target="_blank"
-            aria-label="View Contra Profile"
-          >
-            <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
-              variants={bodyAnimation}
-            >
-              CO
-            </motion.p>
+              <FaCode />
+            </motion.div>
           </Link>
         </div>
       </div>
 
-      <div className="-mt-36 flex flex-col items-center justify-center sm:-mt-20 lg:my-40 lg:-mt-2 lg:py-40 ">
-        <div
-          className={`relative flex flex-col items-center justify-center ${monaSans.className}`}
-        >
-          <AnimatedWords
-            title="VICTOR WILLIAMS"
-            style="inline-block overflow-hidden pt-1 -mr-4 sm:-mr-5 md:-mr-7 lg:-mr-9 -mb-1 sm:-mb-2 md:-mb-3 lg:-mb-4"
-          />
-          <motion.div
-            className="absolute bottom-[-110px] mx-auto sm:bottom-[-100px] md:bottom-[-130px] lg:bottom-[-150px]"
-            variants={imageAnimation}
-          >
-            <Image
-              src={profile}
-              priority
-              alt="Victor's headshot"
-              data-blobity-tooltip="Giga Chad"
-              data-blobity-invert="false"
-              className=" w-[150px] rounded-[16px] grayscale hover:grayscale-0 md:w-[200px] md:rounded-[32px] lg:w-[245px]"
-            />
-          </motion.div>
-        </div>
-      </div>
+      <div className="flex flex-col items-center justify-center sm:mt-10 lg:my-40 lg:py-40">
+  <div
+    className={`relative flex flex-col items-center justify-center ${monaSans.className}`}
+  >
+    <AnimatedWords
+      title="JAY PRATAP"
+      style="inline-block overflow-hidden pt-1 mb-1 text-9xl"
+    />
+    <AnimatedWords
+      title="SINGH BHADORIA"
+      style="inline-block overflow-hidden pt-1 -mb-16 text-center text-9xl"
+    />
+    <motion.div
+      className="relative mx-auto mt-8"
+      variants={imageAnimation}
+    >
+      <Image
+        src={profile}
+        priority
+        alt="Jay's headshot"
+        data-blobity-tooltip="Giga Chad"
+        data-blobity-invert="false"
+        className="w-[150px] rounded-[16px] grayscale hover:grayscale-0 md:w-[200px] md:rounded-[32px] lg:w-[245px]"
+      />
+    </motion.div>
+  </div>
+</div>
+
+
 
       <div
         className="absolute bottom-10 flex items-center 
@@ -118,15 +128,7 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="z-50 text-center text-[16px] font-medium text-[#e4ded7] md:text-[20px] lg:text-left">
-            Frontend Engineer and Web Designer, prev at{" "}
-            <Link
-              href="https://www.korahq.com/"
-              target="_blank"
-              className="underline underline-offset-2 hover:no-underline"
-              aria-label="Kora Website"
-            >
-              Kora,
-            </Link>{" "}
+            Frontend Developer and Web Designer,
             currently available for work.
           </p>
         </motion.div>
@@ -136,8 +138,8 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="text-right text-[16px] font-semibold text-[#e4ded7] md:text-[20px]">
-            Focused on interfaces and experiences, working remotely from Lagos,
-            Nigeria.
+            Focused on interfaces and experiences, working remotely from Gwalior,
+            India.
           </p>
         </motion.div>
       </div>
