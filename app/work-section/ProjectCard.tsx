@@ -34,12 +34,13 @@ const ProjectCard = ({
       animate="animate"
     >
       <Image
-        src={image}
-        alt={name}
-        className={`absolute -bottom-2 w-[60%] sm:w-[85%] md:w-[60%] lg:max-w-[58%] h-[80%] -mb-9 ${
-          id % 2 === 0 ? "right-0" : "left-0"
-        }`}
-      />
+  src={image}
+  alt={name}
+  className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[58%] h-auto -mb-9 ${
+    id % 2 === 0 ? "right-0" : "left-0"
+  }`}
+/>
+
       <div
         className={`absolute top-0 text-[#0E1016] ${
           id % 2 === 0 ? "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"

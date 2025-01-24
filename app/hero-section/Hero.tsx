@@ -94,11 +94,11 @@ const Hero = () => {
   >
     <AnimatedWords
       title="JAY PRATAP"
-      style="inline-block overflow-hidden pt-1 mb-1 text-9xl"
+      style="inline-block overflow-hidden pt-1 mb-1 text-5xl sm:text-7xl md:text-8xl lg:text-9xl"
     />
     <AnimatedWords
       title="SINGH BHADORIA"
-      style="inline-block overflow-hidden pt-1 -mb-16 text-center text-9xl"
+      style="inline-block overflow-hidden pt-1 -mb-16 text-center text-5xl sm:text-7xl md:text-8xl lg:text-9xl"
     />
     <motion.div
       className="relative mx-auto mt-8"
@@ -115,6 +115,7 @@ const Hero = () => {
     </motion.div>
   </div>
 </div>
+
 
 
 
